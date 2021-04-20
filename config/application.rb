@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module ChatApp
   class Application < Rails::Application
+    config.i18n.default_locale = :ja
+    config.time_zone = 'Tokyo'
     # Initialize configuration defaults for originally generated Rails version.
     config.generators do |g|
       g.stylesheets false
